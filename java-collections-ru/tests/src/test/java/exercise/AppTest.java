@@ -15,11 +15,8 @@ class AppTest {
         List<Integer> actualList = App.take(inputList, 1); //return list by using method being tested
         List<Integer> expectedList = new ArrayList<>();
         expectedList.add(1);
-        //Integer[] expectedArr = new Integer[1];
-        //expectedArr[0] = 1;
-        //Integer[] actualArr = inputList.toArray();
 
-        //Assertions.assertThat(actualList).isEqualTo(expectedList);
+        assertThat(actualList).isEqualTo(expectedList);
         // END
     }
 }
