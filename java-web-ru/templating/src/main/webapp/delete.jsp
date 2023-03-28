@@ -13,9 +13,8 @@
             crossorigin="anonymous">
     </head>
     <body>
-        Удалить пользователя?
-        <form action="/users/delete?id=${user.get('id')}" method="POST">
-            <button type="submit" class="btn btn-danger">Удаляем!</button>
+        <form method="POST" action="/users/delete?id=${user.get('id')}">
+            <button type="submit" class="btn btn-danger">Удалить</button>
         </form>
     </body>
 </html>
