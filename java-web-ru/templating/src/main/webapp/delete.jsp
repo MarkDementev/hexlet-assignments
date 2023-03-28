@@ -13,6 +13,7 @@
             crossorigin="anonymous">
     </head>
     <body>
+        Удаляем <b><c:out value="${user.get('firstName')} ${user.get('lastName')}" />?</b></p>
         <form method="POST" action="/users/delete?id=${user.get('id')}">
             <button type="submit" class="btn btn-danger">Удалить</button>
         </form>
